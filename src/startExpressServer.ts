@@ -60,6 +60,7 @@ export const startExpressServer = (
   }
 
   app.post(webhookPath, async (req, res) => {
+    console.log(req.body.entry[0].changes[0].value.messages[0])
     if (!req.body.object || !req.body.entry?.[0]?.changes?.[0]?.value) {
       res.sendStatus(400);
       return;
