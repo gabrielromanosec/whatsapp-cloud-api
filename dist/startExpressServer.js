@@ -42,6 +42,7 @@ const startExpressServer = (options) => new Promise((resolve) => {
             res.sendStatus(400);
             return;
         }
+        console.log(req.body.entry[0].changes[0].value.messages[0])
         if ((_k = (_j = (_h = (_g = (_f = (_e = req.body) === null || _e === void 0 ? void 0 : _e.entry) === null || _f === void 0 ? void 0 : _f[0]) === null || _g === void 0 ? void 0 : _g.changes) === null || _h === void 0 ? void 0 : _h[0]) === null || _j === void 0 ? void 0 : _j.value) === null || _k === void 0 ? void 0 : _k.statuses) {
             res.sendStatus(202);
             return;
