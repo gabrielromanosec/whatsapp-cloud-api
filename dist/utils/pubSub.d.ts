@@ -9,6 +9,7 @@ export declare enum PubSubEvents {
     location = "location",
     contacts = "contacts",
     button_reply = "button_reply",
-    list_reply = "list_reply"
+    list_reply = "list_reply",
+    template_button_reply = "template_button_reply",
 }
 export declare type PubSubEvent = keyof typeof PubSubEvents;
