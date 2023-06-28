@@ -71,7 +71,7 @@ const startExpressServer = (options) => new Promise((resolve) => {
                 };
                 break;
             case 'button':
-                event = PubSubEvents.template_button_reply;
+                event =  pubSub_1.PubSubEvents.template_button_reply;
                 data = {
                   ...(rest.button),
                 }
