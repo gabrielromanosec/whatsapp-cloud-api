@@ -14,5 +14,6 @@ var PubSubEvents;
     PubSubEvents["contacts"] = "contacts";
     PubSubEvents["button_reply"] = "button_reply";
     PubSubEvents["list_reply"] = "list_reply";
+    PubSubEvents["template_button_reply"] = "template_button_reply";
 })(PubSubEvents = exports.PubSubEvents || (exports.PubSubEvents = {}));
 //# sourceMappingURL=pubSub.js.map
