@@ -70,6 +70,12 @@ const startExpressServer = (options) => new Promise((resolve) => {
                     ...(rest.interactive.list_reply || rest.interactive.button_reply),
                 };
                 break;
+            case 'button':
+                event = PubSubEvents.template_button_reply;
+                data = {
+                  ...(rest.button),
+                }
+                break;
             default:
                 break;
         }
